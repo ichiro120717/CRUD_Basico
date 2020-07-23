@@ -10,7 +10,7 @@ class RutasControlador{
 
     public function Rutas(){
 
-        if(inset($_GET["ruta"])){
+        if(isset($_GET["ruta"])){
 
             $rutas = $_GET["ruta"];
 
@@ -25,5 +25,5 @@ class RutasControlador{
         include $respuesta;
 
     }
-    
+
 }
