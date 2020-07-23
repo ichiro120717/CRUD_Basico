@@ -17,10 +17,13 @@ class RutasControlador{
         }else{
 
             $rutas = "index";
+
         }
 
         $respuesta = Modelo::RutasModelo($rutas);
 
         include $respuesta;
+
     }
+    
 }
