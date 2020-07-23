@@ -18,18 +18,12 @@
 
 <section>
 
-	<br>
-	<h1>INGRESAR</h1>
+    <?php
+    
+        $rutas = new RutasControlador();
+        $rutas -> Rutas();
 
-	<form method="post" action="">
-		
-		<input type="text" placeholder="Usuario" name="usuario" required>
-
-		<input type="password" placeholder="Contraseña" name="clave" required>
-
-		<input type="submit" value="Ingresar">
-
-	</form>
+    ?>
 
 </section>
 	
