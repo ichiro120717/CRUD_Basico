@@ -32,6 +32,19 @@ class EmpleadosC{
         $tablaBD = "empleados";
 
         $respuesta = EmpleadosM::MostrarEmpleadosM($tablaBD);
+
+        foreach ($respuesta as $key => $value){
+
+            echo '<tr>
+                    <td>'.$value['nombre'].'</td>
+                    <td>'.$value['apellido'].'</td>
+                    <td>'.$value['email'].'</td>
+                    <td>'.$value['puesto'].'</td>
+                    <td>'.$value['salario'].'</td>
+                    <td><button>Editar</button></td>
+                    <td><button>Borrar</button></td>
+                 </tr>';
+        }
     }
 
 
