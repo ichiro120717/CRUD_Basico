@@ -23,7 +23,7 @@ if(!$_SESSION["Ingreso"]){
 
         $editar -> EditarEmpleadoC();
 
-        }
+        
         ?>
 
 	</form>
