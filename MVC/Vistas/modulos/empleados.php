@@ -48,6 +48,6 @@ if(!$_SESSION["Ingreso"]){
 
 	<?php
 
-	$eliminar = EmpleadosC();
+	$eliminar = new EmpleadosC();
 
 	$eliminar -> BorrarEmpleadoC();

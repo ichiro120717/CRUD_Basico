@@ -111,8 +111,17 @@ class EmpleadosC{
             $tablaBD = "empleados";
 
             $respuesta = EmpleadosM::BorrarEmpleadoM($datosC, $tablaBD);
+
+            if($respuesta == "Bien"){
+
+                header("location:index.php?ruta=empleados");
+
+            }else{
+
+                echo "error";
+            }
+            }
         }
     }
 
 
-}
