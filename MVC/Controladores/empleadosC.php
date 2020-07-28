@@ -85,6 +85,17 @@ class EmpleadosC{
             $tablaBD = "empleados";
 
             $respuesta = empleadosM::ActualizarEmpleadosM($datosC, $tablaBD);
+
+            if($respuesta == "Bien"){
+
+                header("location:index.php?ruta=empleados");
+
+            }else{
+
+                echo "error";
+            }
+
+
         }
     }
 
