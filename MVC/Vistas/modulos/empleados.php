@@ -50,4 +50,4 @@ if(!$_SESSION["Ingreso"]){
 
 	$eliminar = EmpleadosC();
 
-	$eliminar -> EliminarEmpleadoC();
+	$eliminar -> BorrarEmpleadoC();
