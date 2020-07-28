@@ -46,9 +46,8 @@ if(!$_SESSION["Ingreso"]){
 
 	</table>
 
+	<?php
 
-</section>
-	
-</body>
+	$eliminar = EmpleadosC();
 
-</html>
+	$eliminar -> EliminarEmpleadoC();
