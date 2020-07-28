@@ -43,6 +43,13 @@ if(!$_SESSION["Ingreso"]){
 				<td><button>Borrar</button></td>
 			</tr>
 
+			<?php
+
+			$mostrar = new EmpleadosC();
+			$mostrar -> MostrarEmpleadosC();
+
+			?>
+
 		</tbody>
 
 	</table>
