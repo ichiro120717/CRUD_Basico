@@ -4,13 +4,30 @@ class AdminC{
 
     public function IngresoC(){
 
-        if(isset($_POST["usuario1"])){
+        if(isset($_POST["usuarioI"])){
 
-            $datosC = array("usuario"=>$_POST["usuario1"], "clave"=>$_POST["clave1"]);
+            $datosC = array("usuario"=>$_POST["usuarioI"], "clave"=>$_POST["claveI"]);
 
             $tablaBD = "administradores";
 
-            $respuestas = AdminM::IngresoM($datosC, $tablaBD);
+            $respuesta = AdminM::IngresoM($datosC, $tablaBD);
+
+            if($respuesta["usuario"] == $_POST["usuarioI"] && $respuesta["clave"] == $_POST["claveI"]){
+
+                session_start();
+
+                $_SESSION["Ingreso"] = true;
+
+                header("location:index.php?ruta=empleados");
+
+            }else{
+
+                echo "ERROR AL INGRESAR";
+
+            }
+
         }
+
     }
+
 }
