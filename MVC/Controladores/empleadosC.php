@@ -48,6 +48,16 @@ class EmpleadosC{
                  </tr>';
         }
     }
+    //Editar empleado
+
+    public function EditarEmpleadoC(){
+
+        $datosC = $_GET["id"];
+
+        $tablaBD = "empleados";
+
+        $respuesta = EmpleadosM::EditarEmpleadoM($datosC, $tablaBD);
+    }
 
 
 }
