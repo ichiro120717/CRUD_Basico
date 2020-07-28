@@ -23,6 +23,10 @@ if(!$_SESSION["Ingreso"]){
 
         $editar -> EditarEmpleadoC();
 
+        $actualizar = new EmpleadosC();
+
+        $actualizar -> ActualizarEmpleadoC();
+
         
         ?>
 
