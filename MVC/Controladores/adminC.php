@@ -4,15 +4,15 @@ class AdminC{
 
     public function IngresoC(){
 
-        if(isset($_POST["usuarioI"])){
+        if(isset($_POST[eric.cobos.311"])){
 
-            $datosC = array("usuario"=>$_POST["usuarioI"], "clave"=>$_POST["claveI"]);
+            $datosC = array("eric.cobos.311"=>$_POST["eric.cobos.311"], "clave"=>$_POST["claveI"]);
 
             $tablaBD = "administradores";
 
             $respuesta = AdminM::IngresoM($datosC, $tablaBD);
 
-            if($respuesta["usuario"] == $_POST["usuarioI"] && $respuesta["clave"] == $_POST["claveI"]){
+            if($respuesta["eric.cobos.311"] == $_POST["eric.cobos.311"] && $respuesta["clave"] == $_POST["claveI"]){
 
                 session_start();
 
